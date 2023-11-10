@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Donna</title>
+		<link rel="apple-touch-icon" href="images/touch/apple-icon-57x57.png" sizes="57x57">
+		<link rel="apple-touch-icon" href="images/touch/apple-icon-60x60.png" sizes="60x60">
+		<link rel="apple-touch-icon" href="images/touch/apple-icon-72x72.png" sizes="72x72">
+		<link rel="apple-touch-icon" href="images/touch/apple-icon-76x76.png" sizes="76x76">
+		<link rel="apple-touch-icon" href="images/touch/apple-icon-114x114.png" sizes="114x114">
+		<link rel="apple-touch-icon" href="images/touch/apple-icon-120x120.png" sizes="120x120">
+		<link rel="apple-touch-icon" href="images/touch/apple-icon-144x144.png" sizes="144x144">
+		<link rel="apple-touch-icon" href="images/touch/apple-icon-152x152.png" sizes="152x152">
+		<link rel="apple-touch-icon" href="images/touch/apple-icon-180x180.png" sizes="180x180">
+		<link rel="icon" href="favicon.ico">
+		<link rel="icon" href="images/touch/favicon-16x16.png" sizes="16x16">
+		<link rel="icon" href="images/touch/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" href="images/touch/favicon-96x96.png" sizes="96x96">
+		<link rel="icon" href="images/touch/android-icon-192x192.png" sizes="196x196">
+		<link rel="manifest" href="images/touch/manifest.json">
+		<link rel="stylesheet" href="css/main.css?v=1677229612386">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&amp;display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<header class="header page-container">
+			<div class="header__content">
+				<div class="header__content-left">
+					<div class="header__content-touch"><a class="btn-touch btnTouchJs" href="#"><img class="image js-lazy" draggable="false" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAAD0lEQVR42mNkwAIYh7IgAAVVAAuInjI5AAAAAElFTkSuQmCC" data-src="images/icons/svg/icon-menu.svg" alt="#"/></a></div>
+					<div class="header__content-logo"><a href="#"><img class="image js-lazy" draggable="false" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAAD0lEQVR42mNkwAIYh7IgAAVVAAuInjI5AAAAAElFTkSuQmCC" data-src="images/logo.svg" alt="#"/></a></div>
+				</div>
+				<div class="header__content-right">
+					<ul class="header__social-list sm-hidden">
+						<li><a href="#"><svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2 0C0.895431 0 0 0.89543 0 2V21C0 22.1046 0.89543 23 2 23H21C22.1046 23 23 22.1046 23 21V2C23 0.895431 22.1046 0 21 0H2ZM16.0291 6.55834C16.0291 6.3308 16.2142 6.14563 16.4418 6.14563C16.6693 6.14563 16.8545 6.33077 16.8545 6.55834C16.8545 6.78592 16.6693 6.97106 16.4418 6.97106C16.2142 6.97106 16.0291 6.78589 16.0291 6.55834ZM11.4999 7.84116C9.48243 7.84116 7.84106 9.48252 7.84106 11.5C7.84106 13.5175 9.48243 15.1589 11.4999 15.1589C13.5174 15.1589 15.1588 13.5175 15.1588 11.5C15.1588 9.48255 13.5174 7.84116 11.4999 7.84116ZM7.66029 3H15.3397C17.9094 3 20 5.0906 20 7.66032V15.3397C20 17.9094 17.9094 20 15.3397 20H7.66029C5.0906 20 3 17.9094 3 15.3397V7.66032C3 5.0906 5.0906 3 7.66029 3ZM6.83725 11.5C6.83725 14.0711 8.92892 16.1628 11.5 16.1628C14.0711 16.1628 16.1628 14.0711 16.1628 11.5C16.1628 8.92895 14.0711 6.83729 11.5 6.83729C8.92895 6.83729 6.83725 8.92892 6.83725 11.5ZM15.025 6.55838C15.025 7.33952 15.6605 7.97502 16.4417 7.97502C17.2228 7.97502 17.8583 7.33948 17.8583 6.55835C17.8583 5.77721 17.2228 5.1417 16.4417 5.1417C15.6605 5.1417 15.025 5.77724 15.025 6.55838Z"/></svg></a></li>
+						<li><a href="#"><svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_1_79)"><path d="M21.3412 0H1.65878C0.742615 0 0 0.742615 0 1.65878V21.3412C0 22.2574 0.742615 23 1.65878 23H12.2861V14.1055H9.29883V10.624H12.2861V8.0619C12.2861 5.09074 14.1 3.47355 16.7504 3.47355C18.0198 3.47355 19.1107 3.56813 19.4287 3.61042V6.71582H17.6011C16.1591 6.71582 15.8799 7.40105 15.8799 8.40671V10.624H19.3276L18.8784 14.1055H15.8799V23H21.3412C22.2574 23 23 22.2574 23 21.3412V1.65878C23 0.742615 22.2574 0 21.3412 0V0Z" /></g><defs><clipPath id="clip0_1_79"><rect width="23" height="23" /></clipPath></defs></svg></a></li>
+					</ul>
+					<div class="header__search sm-hidden"><a class="header__search-btn btnSearchJs" href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.8567 20.9736L18.5326 16.6494C19.8431 14.9338 20.5618 12.8529 20.5621 10.6571C20.5621 8.01099 19.5315 5.52303 17.6601 3.65194C15.789 1.78084 13.3014 0.750244 10.6549 0.750244C8.00871 0.750244 5.52075 1.78084 3.64966 3.65194C-0.212972 7.51489 -0.212972 13.8 3.64966 17.6624C5.52075 19.5338 8.00871 20.5644 10.6549 20.5644C12.8507 20.5641 14.9316 19.8453 16.6471 18.5348L20.9713 22.859C21.2314 23.1194 21.5728 23.2496 21.914 23.2496C22.2551 23.2496 22.5966 23.1194 22.8567 22.859C23.3775 22.3385 23.3775 21.4941 22.8567 20.9736ZM5.53508 15.7769C2.71216 12.954 2.71248 8.3606 5.53508 5.53735C6.90259 4.17017 8.72095 3.41691 10.6549 3.41691C12.5891 3.41691 14.4071 4.17017 15.7747 5.53735C17.1422 6.90487 17.8954 8.72323 17.8954 10.6571C17.8954 12.5914 17.1422 14.4094 15.7747 15.7769C14.4071 17.1445 12.5891 17.8977 10.6549 17.8977C8.72095 17.8977 6.90259 17.1445 5.53508 15.7769Z"/></svg></a>
+						<form class="header__search-form" action="" method="post">
+							<button class="header__search-btn__action" type="submit"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.8567 20.9736L18.5326 16.6494C19.8431 14.9338 20.5618 12.8529 20.5621 10.6571C20.5621 8.01099 19.5315 5.52303 17.6601 3.65194C15.789 1.78084 13.3014 0.750244 10.6549 0.750244C8.00871 0.750244 5.52075 1.78084 3.64966 3.65194C-0.212972 7.51489 -0.212972 13.8 3.64966 17.6624C5.52075 19.5338 8.00871 20.5644 10.6549 20.5644C12.8507 20.5641 14.9316 19.8453 16.6471 18.5348L20.9713 22.859C21.2314 23.1194 21.5728 23.2496 21.914 23.2496C22.2551 23.2496 22.5966 23.1194 22.8567 22.859C23.3775 22.3385 23.3775 21.4941 22.8567 20.9736ZM5.53508 15.7769C2.71216 12.954 2.71248 8.3606 5.53508 5.53735C6.90259 4.17017 8.72095 3.41691 10.6549 3.41691C12.5891 3.41691 14.4071 4.17017 15.7747 5.53735C17.1422 6.90487 17.8954 8.72323 17.8954 10.6571C17.8954 12.5914 17.1422 14.4094 15.7747 15.7769C14.4071 17.1445 12.5891 17.8977 10.6549 17.8977C8.72095 17.8977 6.90259 17.1445 5.53508 15.7769Z"/></svg></button>
+							<div class="header__search-control">
+								<input type="search" placeholder="Search">
+							</div>
+						</form>
+					</div>
+					<div class="header__whatsapp"><a class="header__whatsapp-btn" href="#"><span class="header__whatsapp-btn__icon"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_1_65)"><path d="M14.8369 12.7357C14.6863 12.5852 14.4847 12.5022 14.269 12.5022C14.0534 12.5022 13.8518 12.5851 13.7013 12.7356L13.4025 13.0344C13.0854 13.3515 12.6626 13.5262 12.2122 13.5262C11.7617 13.5262 11.3389 13.3515 11.0217 13.0342L8.96461 10.9773C8.6475 10.6602 8.47279 10.2375 8.47275 9.78699C8.47271 9.33646 8.64733 8.91365 8.96448 8.5965L9.26337 8.29769C9.5764 7.98466 9.5764 7.47518 9.26333 7.16211L8.66568 6.56433C8.51524 6.41394 8.31355 6.33105 8.0978 6.33105C7.88214 6.33105 7.68053 6.41394 7.53001 6.56442L7.08439 7.01013C6.4567 7.63782 6.23983 8.62761 6.47371 9.79704C6.72654 11.0612 7.46513 12.3569 8.55353 13.4453C9.91289 14.8046 11.6047 15.6162 13.0789 15.6163H13.0792C13.8696 15.6163 14.5298 15.3737 14.9888 14.9147L15.4345 14.469C15.7476 14.1559 15.7476 13.6464 15.4345 13.3333L14.8369 12.7357Z"/><path d="M18.7781 3.2218C16.7004 1.14421 13.9381 0 10.9999 0C10.9997 0 11 0 10.9998 0C8.06188 0 5.29934 1.1443 3.2218 3.22175C1.14421 5.29942 0 8.06175 0 11C8.59375e-05 12.8703 0.476094 14.7087 1.37895 16.3346L0.0238047 21.1819C-0.0388437 21.406 0.0242344 21.6466 0.188805 21.8112C0.353375 21.9758 0.593828 22.0388 0.818125 21.9762L5.66547 20.621C7.29124 21.524 9.12948 22 11 22C13.9382 22 16.7005 20.8558 18.7782 18.7782C20.8558 16.7005 22 13.9382 22 11C21.9999 8.06171 20.8557 5.29938 18.7781 3.2218ZM16.346 15.3806L15.9003 15.8263C15.1944 16.5322 14.2188 16.9054 13.0792 16.9054C13.0791 16.9054 13.079 16.9054 13.0789 16.9054C11.2703 16.9052 9.23781 15.9525 7.64204 14.3569C6.37566 13.0903 5.5119 11.5608 5.2097 10.0499C4.8886 8.44413 5.23063 7.04095 6.17289 6.09868L6.61856 5.65293C7.01259 5.25895 7.53792 5.042 8.09785 5.042C8.65777 5.042 9.18311 5.2589 9.57718 5.65275L10.1749 6.25066C10.9905 7.0663 10.9905 8.39352 10.1749 9.20923L9.87598 9.50808C9.80237 9.58169 9.76186 9.68069 9.76186 9.78682C9.7619 9.89304 9.80246 9.99208 9.87615 10.0658L11.9332 12.1227C12.007 12.1966 12.1061 12.2372 12.2122 12.2372C12.3184 12.2372 12.4174 12.1966 12.4911 12.1229L12.7899 11.8241C13.1838 11.4302 13.7091 11.2132 14.2691 11.2132C14.829 11.2132 15.3544 11.4302 15.7484 11.8242L16.3461 12.4218C17.1617 13.2376 17.1617 14.5649 16.346 15.3806Z"/></g><defs><clipPath id="clip0_1_65"><rect width="22" height="22" fill="white"/></clipPath></defs></svg></span><span class="header__whatsapp-btn__text">Book by WhatsApp</span></a></div>
+					<div class="header__reservation"><a class="header__reservation-link is-active" href="#"><span>Reservations</span></a></div>
+					<div class="header__phone"><a class="header__phone-link" href="tel:+6281277189610"><span>+ 62 812 7718 9610</span></a></div>
+				</div>
+			</div>
+		</header>
+		<main class="wrapper">
+			<div class="wrapper__container">
+				<div class="wrapper__section">
+					<section class="section page-container section-one">
+						<div class="section__bg">
+							<picture class="lozad js-lazy animate" data-iesrc="#" data-alt="#">
+								<source srcset="images/section-bg/bg1.jpg, images/section-bg/bg1@2x.jpg 2x" media="(min-width: 1366px)" type="image/png"/>
+								<source srcset="images/section-bg/bg1-tablet.jpg" media="(min-width: 768px) and (max-width: 1365px)" type="image/png"/>
+								<source srcset="images/section-bg/bg1-mobile.jpg" media="(max-width: 767px)" type="image/png"/>
+								<source srcset="#"/>
+							</picture>
+						</div>
+						<div class="section__content">
+							<div class="container">
+								<div class="block__title">
+									<div class="block__title-container">
+										<div class="block__title-block">
+											<div class="block__title-block__left">
+												<div class="block__title-head"><span style="transition-delay: 0s">A</span><span style="transition-delay: 0.04s">&nbsp;</span><span style="transition-delay: 0.08s">n</span><span style="transition-delay: 0.12s">e</span><span style="transition-delay: 0.16s">w</span>
+												</div>
+												<div class="block__title-content">
+													<div class="block__title-content__left">
+														<h1><span style="transition-delay: 0s">d</span><span style="transition-delay: 0.04s">i</span><span style="transition-delay: 0.08s">n</span><span style="transition-delay: 0.12s">i</span><span style="transition-delay: 0.16s">n</span><span style="transition-delay: 0.2s">g</span><span style="transition-delay: 0.24s">&nbsp;</span><span style="transition-delay: 0.28s">&amp;</span><span style="transition-delay: 0.32s">&nbsp;</span><span class="inline-block"><span style="transition-delay: 0.36s">c</span><span style="transition-delay: 0.4s">l</span><span style="transition-delay: 0.44s">u</span><span style="transition-delay: 0.48s">b</span><span style="transition-delay: 0.52s">b</span><span style="transition-delay: 0.56s">i</span><span style="transition-delay: 0.6s">n</span><span style="transition-delay: 0.64s">g</span></span><span class="is-txt"><span style="transition-delay: 0.68s">e</span><span style="transition-delay: 0.72s">x</span><span style="transition-delay: 0.76s">p</span><span style="transition-delay: 0.8s">e</span><span style="transition-delay: 0.84s">r</span><span style="transition-delay: 0.88s">i</span><span style="transition-delay: 0.92s">e</span><span style="transition-delay: 0.96s">n</span><span style="transition-delay: 1s">c</span><span style="transition-delay: 1.04s">e</span><span style="transition-delay: 1.08s">&nbsp;</span><span style="transition-delay: 1.12s">i</span><span style="transition-delay: 1.16s">n</span><span style="transition-delay: 1.2s">&nbsp;</span><span class="inline-block"><span style="transition-delay: 1.24s">U</span><span style="transition-delay: 1.28s">b</span><span style="transition-delay: 1.32s">u</span><span style="transition-delay: 1.36s">d</span><span style="transition-delay: 1.4000000000000001s">.</span></span></span>
+														</h1>
+													</div>
+													<div class="block__title-content__right sm-hidden"><a class="btn-menu" href="#"><span class="btn-menu__icon"><img class="image js-lazy" draggable="false" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAAD0lEQVR42mNkwAIYh7IgAAVVAAuInjI5AAAAAElFTkSuQmCC" data-src="images/icons/svg/icon-menu-call.svg" alt="#"/></span><span class="btn-menu__text">Menu</span></a><a class="btn-arrow__menu" href="#"><img class="image js-lazy" draggable="false" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAAD0lEQVR42mNkwAIYh7IgAAVVAAuInjI5AAAAAElFTkSuQmCC" data-src="images/icons/svg/icon-arrow-menu.svg" alt="#"/></a></div>
+												</div>
+											</div>
+											<div class="block__title-block__right sm-visible"><a class="btn-arrow__menu" href="#"><img class="image js-lazy" draggable="false" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAAD0lEQVR42mNkwAIYh7IgAAVVAAuInjI5AAAAAElFTkSuQmCC" data-src="images/icons/svg/icon-arrow-menu.svg" alt="#"/></a></div>
+										</div>
+										<div class="block__btn-menu sm-visible"><a class="btn-menu" href="#"><span class="btn-menu__icon"><img class="image js-lazy" draggable="false" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAAD0lEQVR42mNkwAIYh7IgAAVVAAuInjI5AAAAAElFTkSuQmCC" data-src="images/icons/svg/icon-menu-call.svg" alt="#"/></span><span class="btn-menu__text">Menu</span></a></div>
+									</div>
+									<div class="block__title-scroll"><a class="btn-scroll js-to-anchor" href="#mission"><span class="btn-scroll__icon"><img class="image js-lazy" draggable="false" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAAD0lEQVR42mNkwAIYh7IgAAVVAAuInjI5AAAAAElFTkSuQmCC" data-src="images/icons/svg/icon-scroll-to.svg" alt="#"/></span></a></div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="section page-container section-two" id="mission">
+						<div class="section__bg">
+							<picture class="lozad js-lazy animate" data-iesrc="#" data-alt="#">
+								<source srcset="images/section-bg/bg2.jpg, images/section-bg/bg2@2x.jpg 2x" media="(min-width: 1366px)" type="image/png"/>
+								<source srcset="images/section-bg/bg2-tablet.jpg" media="(min-width: 768px) and (max-width: 1365px)" type="image/png"/>
+								<source srcset="images/section-bg/bg2-mobile.jpg" media="(max-width: 767px)" type="image/png"/>
+								<source srcset="#"/>
+							</picture>
+						</div>
+						<div class="lamp-img animate">
+							<picture class="lozad js-lazy" data-iesrc="#" data-alt="#">
+								<source srcset="images/lamp.png, images/lamp@2x.png 2x" media="(min-width: 768px)" type="image/png"/>
+								<source srcset="images/lamp-mobile.png, images/lamp-mobile@2x.png 2x" media="(max-width: 767px)" type="image/png"/>
+								<source srcset="#"/>
+							</picture>
+						</div>
+						<div class="section__content">
+							<div class="container">
+								<div class="mission__content">
+									<div class="mission__content-left">
+										<h2 class="animate"><span style="transition-delay: 0s">O</span><span style="transition-delay: 0.04s">u</span><span style="transition-delay: 0.08s">r</span><span style="transition-delay: 0.12s">&nbsp;</span><span class="is-orange is-txt"><span style="transition-delay: 0.16s">M</span><span style="transition-delay: 0.2s">i</span><span style="transition-delay: 0.24s">s</span><span style="transition-delay: 0.28s">s</span><span style="transition-delay: 0.32s">i</span><span style="transition-delay: 0.36s">o</span><span style="transition-delay: 0.4s">n</span></span>
+										</h2>
+										<div class="mission__text animate">
+											<p>Donna Restaurant is a restaurant located in the heart of Baliyu. The chef has many years of experience and leads a team of chefs using innovation and superior technique. Donna offers a variety of gastronomic adventures with plenty of small and large plates, signature cocktails and a full sushi bar stocked with sashimi and nigiri options fresh from Japan.</p>
+										</div>
+										<div class="mission__info">
+											<ul class="mission__info-list">
+												<li class="mission__info-item">
+													<div class="mission__info-icon animate icon-rating"><img class="image js-lazy" draggable="false" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAAD0lEQVR42mNkwAIYh7IgAAVVAAuInjI5AAAAAElFTkSuQmCC" data-src="images/icons/svg/icon-rating.svg" alt="#"/>
+													</div>
+													<div class="mission__info-block">
+														<div class="mission__info-block__number animate">5/5</div>
+														<div class="mission__info-block__text animate">Tripadvisor rating</div>
+													</div>
+												</li>
+												<li class="mission__info-item">
+													<div class="mission__info-icon animate icon-reviews"><img class="image js-lazy" draggable="false" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAAD0lEQVR42mNkwAIYh7IgAAVVAAuInjI5AAAAAElFTkSuQmCC" data-src="images/icons/svg/icon-reviews.svg" alt="#"/>
+													</div>
+													<div class="mission__info-block">
+														<div class="mission__info-block__number animate">4.8/5</div>
+														<div class="mission__info-block__text animate">Google reviews (207 total)</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+										<div class="mission__view animate"><a class="btn-orange" href="#"><span>View our menu</span></a></div>
+									</div>
+									<div class="mission__content-right">
+										<div class="mission__img-block animate">
+											<div class="mission__img-main">
+												<picture class="lozad js-lazy" data-iesrc="#" data-alt="#">
+													<source srcset="images/mission-img.jpg, images/mission-img@2x.jpg 2x" media="(min-width: 1366px)" type="image/png"/>
+													<source srcset="images/mission-img-tablet.jpg, images/mission-img-tablet@2x.jpg 2x" media="(min-width: 768px) and (max-width: 1365px)" type="image/png"/>
+													<source srcset="images/mission-img-mobile.jpg, images/mission-img-mobile@2x.jpg 2x" media="(max-width: 767px)" type="image/png"/>
+													<source srcset="#"/>
+												</picture>
+											</div>
+											<div class="mission__img-asparagus animate">
+												<picture class="lozad js-lazy" data-iesrc="#" data-alt="#">
+													<source srcset="images/asparagus.png, images/asparagus@2x.png 2x" media="(min-width: 768px)" type="image/png"/>
+													<source srcset="images/asparagus-mobile.png, images/asparagus-mobile@2x.png 2x" media="(max-width: 767px)" type="image/png"/>
+													<source srcset="#"/>
+												</picture>
+											</div>
+											<div class="mission__img-dish animate">
+												<picture class="lozad js-lazy" data-iesrc="#" data-alt="#">
+													<source srcset="images/dish.png, images/dish@2x.png 2x" media="(min-width: 768px)" type="image/png"/>
+													<source srcset="images/dish-mobile.png, images/dish-mobile@2x.png 2x" media="(max-width: 767px)" type="image/png"/>
+													<source srcset="#"/>
+												</picture>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="section page-container section-three">
+						<div class="section__bg">
+							<picture class="lozad js-lazy animate" data-iesrc="#" data-alt="#">
+								<source srcset="images/section-bg/bg3.jpg, images/section-bg/bg3@2x.jpg 2x" media="(min-width: 1366px)" type="image/png"/>
+								<source srcset="images/section-bg/bg3-tablet.jpg" media="(min-width: 768px) and (max-width: 1365px)" type="image/png"/>
+								<source srcset="images/section-bg/bg3-mobile.jpg" media="(max-width: 767px)" type="image/png"/>
+								<source srcset="#"/>
+							</picture>
+						</div>
+						<div class="section__content">
+							<div class="container">
+								<div class="events__content">
+									<h2 class="animate"><span style="transition-delay: 0s">S</span><span style="transition-delay: 0.04s">p</span><span style="transition-delay: 0.08s">e</span><span style="transition-delay: 0.12s">c</span><span style="transition-delay: 0.16s">i</span><span style="transition-delay: 0.2s">a</span><span style="transition-delay: 0.24s">l</span><span style="transition-delay: 0.28s">&nbsp;</span><span class="is-orange is-txt inline-block"><span style="transition-delay: 0.32s">e</span><span style="transition-delay: 0.36s">v</span><span style="transition-delay: 0.4s">e</span><span style="transition-delay: 0.44s">n</span><span style="transition-delay: 0.48s">t</span><span style="transition-delay: 0.52s">s</span></span>
+									</h2>
+									<div class="clear"></div>
+									<div class="events__container">
+										<div class="events__row">
+											<div class="events__col animate">
+												<div class="events__block">
+													<div class="events__block-img"><a class="events__block-img__link" href="#"><span class="event__img">
+																<picture class="lozad js-lazy" data-iesrc="" data-alt="#">
+																	<source srcset="images/events/event1.jpg, images/events/event1@2x.jpg 2x" media="(min-width: 1366px)" type="image/png"/>
+																	<source srcset="images/events/event1-tablet.jpg, images/events/event1-tablet@2x.jpg 2x" media="(min-width: 768px) and (max-width: 1365px)" type="image/png"/>
+																	<source srcset="images/events/event1-mobile.jpg, images/events/event1-mobile@2x.jpg 2x" media="(max-width: 767px)" type="image/png"/>
+																	<source srcset=""/>
+																</picture></span><span class="events__block-img__content"><span class="event__title">Party</span><span class="event__desk">Birthday or any other party at your discretion in our restaurant.</span></span></a></div>
+													<div class="events__block-more"><a class="btn-orange" href="#"><span>More info</span></a></div>
+												</div>
+											</div>
+											<div class="events__col animate">
+												<div class="events__block">
+													<div class="events__block-img"><a class="events__block-img__link" href="#"><span class="event__img">
+																<picture class="lozad js-lazy" data-iesrc="" data-alt="#">
+																	<source srcset="images/events/event2.jpg, images/events/event2@2x.jpg 2x" media="(min-width: 1366px)" type="image/png"/>
+																	<source srcset="images/events/event2-tablet.jpg, images/events/event2-tablet@2x.jpg 2x" media="(min-width: 768px) and (max-width: 1365px)" type="image/png"/>
+																	<source srcset="images/events/event2-mobile.jpg, images/events/event2-mobile@2x.jpg 2x" media="(max-width: 767px)" type="image/png"/>
+																	<source srcset=""/>
+																</picture></span><span class="events__block-img__content"><span class="event__title">Business</span><span class="event__desk">A meeting place for your <br> business partners</span></span></a></div>
+													<div class="events__block-more"><a class="btn-orange" href="#"><span>More info</span></a></div>
+												</div>
+											</div>
+											<div class="events__col animate">
+												<div class="events__block">
+													<div class="events__block-img"><a class="events__block-img__link" href="#"><span class="event__img">
+																<picture class="lozad js-lazy" data-iesrc="" data-alt="#">
+																	<source srcset="images/events/event3.jpg, images/events/event3@2x.jpg 2x" media="(min-width: 1366px)" type="image/png"/>
+																	<source srcset="images/events/event3-tablet.jpg, images/events/event3-tablet@2x.jpg 2x" media="(min-width: 768px) and (max-width: 1365px)" type="image/png"/>
+																	<source srcset="images/events/event3-mobile.jpg, images/events/event3-mobile@2x.jpg 2x" media="(max-width: 767px)" type="image/png"/>
+																	<source srcset=""/>
+																</picture></span><span class="events__block-img__content"><span class="event__title">Meeting</span><span class="event__desk">Meetings of any format. <br> Trust us.</span></span></a></div>
+													<div class="events__block-more"><a class="btn-orange" href="#"><span>More info</span></a></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="section page-container section-four">
+						<div class="section__bg">
+							<picture class="lozad js-lazy animate" data-iesrc="#" data-alt="#">
+								<source srcset="images/section-bg/bg4.jpg, images/section-bg/bg4@2x.jpg 2x" media="(min-width: 1366px)" type="image/png"/>
+								<source srcset="images/section-bg/bg4-tablet.jpg" media="(min-width: 768px) and (max-width: 1365px)" type="image/png"/>
+								<source srcset="images/section-bg/bg4-mobile.jpg" media="(max-width: 767px)" type="image/png"/>
+								<source srcset="#"/>
+							</picture>
+						</div>
+						<div class="hand-img animate">
+							<picture class="lozad js-lazy" data-iesrc="#" data-alt="#">
+								<source srcset="images/hand.png, images/hand@2x.png 2x" media="(min-width: 1366px)" type="image/png"/>
+								<source srcset="images/hand-tablet.png, images/hand-tablet@2x.png 2x" media="(min-width: 768px) and (max-width: 1365px)" type="image/png"/>
+								<source srcset="images/hand-mobile.png, images/hand-mobile@2x.png 2x" media="(max-width: 767px)" type="image/png"/>
+								<source srcset="#"/>
+							</picture>
+						</div>
+						<div class="section__content">
+							<div class="container">
+								<div class="place__content">
+									<div class="place__block">
+										<h2 class="animate"><span class="inline-block"><span style="transition-delay: 0s">P</span><span style="transition-delay: 0.04s">l</span><span style="transition-delay: 0.08s">a</span><span style="transition-delay: 0.12s">c</span><span style="transition-delay: 0.16s">e</span><span style="transition-delay: 0.2s">&nbsp;</span><span style="transition-delay: 0.24s">t</span><span style="transition-delay: 0.28s">o</span><span style="transition-delay: 0.32s">&nbsp;</span><span style="transition-delay: 0.36s">c</span><span style="transition-delay: 0.4s">h</span><span style="transition-delay: 0.44s">i</span><span style="transition-delay: 0.48s">l</span><span style="transition-delay: 0.52s">l</span><span style="transition-delay: 0.56s">&nbsp;</span></span><span class="is-orange is-txt"><span style="transition-delay: 0.6s">a</span><span style="transition-delay: 0.64s">n</span><span style="transition-delay: 0.68s">d</span><span style="transition-delay: 0.72s">&nbsp;</span></span><span class="inline-block"><span style="transition-delay: 0.76s">r</span><span style="transition-delay: 0.8s">e</span><span style="transition-delay: 0.84s">l</span><span style="transition-delay: 0.88s">a</span><span style="transition-delay: 0.92s">x</span></span>
+										</h2>
+										<div class="place__block-text animate">
+											<p>Let yourself relax at Donna's restaurant. Swimming pool, cocktails, pleasant music, atmosphere and complete peace - everything for your rest. <br> You will want to come back here again. <br> Book a place by contacting us in a convenient way for you</p>
+										</div>
+										<div class="place__block-action animate"><a class="btn-orange" href="#"><span>View our menu</span></a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="section page-container section-five">
+						<div class="section__bg">
+							<picture class="lozad js-lazy animate" data-iesrc="#" data-alt="#">
+								<source srcset="images/section-bg/bg3.jpg, images/section-bg/bg3@2x.jpg 2x" media="(min-width: 1366px)" type="image/png"/>
+								<source srcset="images/section-bg/bg3-tablet.jpg" media="(min-width: 768px) and (max-width: 1365px)" type="image/png"/>
+								<source srcset="images/section-bg/bg5-mobile.jpg" media="(max-width: 767px)" type="image/png"/>
+								<source srcset="#"/>
+							</picture>
+						</div>
+						<div class="section__content">
+							<div class="container">
+								<div class="components__content">
+									<h2 class="animate">
+										<div><span style="transition-delay: 0s">S</span><span style="transition-delay: 0.04s">t</span><span style="transition-delay: 0.08s">y</span><span style="transition-delay: 0.12s">l</span><span style="transition-delay: 0.16s">i</span><span style="transition-delay: 0.2s">s</span><span style="transition-delay: 0.24s">h</span><span class="is-orange"><span style="transition-delay: 0.28s">&nbsp;</span><span style="transition-delay: 0.32s">&amp;</span><span style="transition-delay: 0.36s">&nbsp;</span></span><span class="inline-block"><span style="transition-delay: 0.4s">F</span><span style="transition-delay: 0.44s">l</span><span style="transition-delay: 0.48s">a</span><span style="transition-delay: 0.52s">v</span><span style="transition-delay: 0.56s">o</span><span style="transition-delay: 0.6s">r</span><span style="transition-delay: 0.64s">f</span><span style="transition-delay: 0.68s">u</span><span style="transition-delay: 0.72s">l</span><span style="transition-delay: 0.76s">&nbsp;</span></span>
+										</div><span class="is-orange"><span style="transition-delay: 0.8s">C</span><span style="transition-delay: 0.84s">o</span><span style="transition-delay: 0.88s">m</span><span style="transition-delay: 0.92s">p</span><span style="transition-delay: 0.96s">o</span><span style="transition-delay: 1s">n</span><span style="transition-delay: 1.04s">e</span><span style="transition-delay: 1.08s">n</span><span style="transition-delay: 1.12s">t</span><span style="transition-delay: 1.16s">s</span></span>
+									</h2>
+									<div class="component__img img1"><img class="image js-lazy" draggable="false" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAAD0lEQVR42mNkwAIYh7IgAAVVAAuInjI5AAAAAElFTkSuQmCC" data-src="images/components/img1.png" data-srcset="images/components/img1@2x.png 2x" alt="#"/>
+									</div>
+									<div class="component__img img2">
+										<picture class="lozad js-lazy" data-iesrc="#" data-alt="#">
+											<source srcset="images/components/img2.png, images/components/img2@2x.png 2x" media="(min-width: 768px)" type="image/png"/>
+											<source srcset="images/components/img2-mobile.png, images/components/img2-mobile@2x.png 2x" media="(max-width: 767px)" type="image/png"/>
+											<source srcset="#"/>
+										</picture>
+									</div>
+									<div class="component__img img3"><img class="image js-lazy" draggable="false" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAAD0lEQVR42mNkwAIYh7IgAAVVAAuInjI5AAAAAElFTkSuQmCC" data-src="images/components/img3.png" data-srcset="images/components/img3@2x.png 2x" alt="#"/>
+									</div>
+									<div class="component__img img4"><img class="image js-lazy" draggable="false" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAAD0lEQVR42mNkwAIYh7IgAAVVAAuInjI5AAAAAElFTkSuQmCC" data-src="images/components/img4.png" data-srcset="images/components/img4@2x.png 2x" alt="#"/>
+									</div>
+									<div class="component__img img5"><img class="image js-lazy" draggable="false" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAAD0lEQVR42mNkwAIYh7IgAAVVAAuInjI5AAAAAElFTkSuQmCC" data-src="images/components/img5.png" data-srcset="images/components/img5@2x.png 2x" alt="#"/>
+									</div>
+									<div class="component__img img6">
+										<picture class="lozad js-lazy" data-iesrc="#" data-alt="#">
+											<source srcset="images/components/img6.png, images/components/img6@2x.png 2x" media="(min-width: 768px)" type="image/png"/>
+											<source srcset="images/components/img6-mobile.png, images/components/img6-mobile@2x.png 2x" media="(max-width: 767px)" type="image/png"/>
+											<source srcset="#"/>
+										</picture>
+									</div>
+									<div class="component__img img7"><img class="image js-lazy" draggable="false" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAAD0lEQVR42mNkwAIYh7IgAAVVAAuInjI5AAAAAElFTkSuQmCC" data-src="images/components/img7.png" data-srcset="images/components/img7@2x.png 2x" alt="#"/>
+									</div>
+									<div class="component__img img8"><img class="image js-lazy" draggable="false" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAAD0lEQVR42mNkwAIYh7IgAAVVAAuInjI5AAAAAElFTkSuQmCC" data-src="images/components/img8.png" data-srcset="images/components/img8@2x.png 2x" alt="#"/>
+									</div>
+									<div class="component__img img9"><img class="image js-lazy" draggable="false" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAAD0lEQVR42mNkwAIYh7IgAAVVAAuInjI5AAAAAElFTkSuQmCC" data-src="images/components/img9.png" data-srcset="images/components/img9@2x.png 2x" alt="#"/>
+									</div>
+									<div class="component__img img10"><img class="image js-lazy" draggable="false" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAAD0lEQVR42mNkwAIYh7IgAAVVAAuInjI5AAAAAElFTkSuQmCC" data-src="images/components/img10.png" data-srcset="images/components/img10@2x.png 2x" alt="#"/>
+									</div>
+									<div class="component__img img11">
+										<picture class="lozad js-lazy" data-iesrc="#" data-alt="#">
+											<source srcset="images/components/img11.png, images/components/img11@2x.png 2x" media="(min-width: 768px)" type="image/png"/>
+											<source srcset="images/components/img11-mobile.png, images/components/img11-mobile@2x.png 2x" media="(max-width: 767px)" type="image/png"/>
+											<source srcset="#"/>
+										</picture>
+									</div>
+									<div class="component__img img12">
+										<picture class="lozad js-lazy" data-iesrc="#" data-alt="#">
+											<source srcset="images/components/img12.png, images/components/img12@2x.png 2x" media="(min-width: 768px)" type="image/png"/>
+											<source srcset="images/components/img12-mobile.png, images/components/img12-mobile@2x.png 2x" media="(max-width: 767px)" type="image/png"/>
+											<source srcset="#"/>
+										</picture>
+									</div>
+									<div class="component__img img13"><img class="image js-lazy" draggable="false" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAAD0lEQVR42mNkwAIYh7IgAAVVAAuInjI5AAAAAElFTkSuQmCC" data-src="images/components/img13.png" data-srcset="images/components/img13@2x.png 2x" alt="#"/>
+									</div>
+									<div class="component__img img14"><img class="image js-lazy" draggable="false" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAAD0lEQVR42mNkwAIYh7IgAAVVAAuInjI5AAAAAElFTkSuQmCC" data-src="images/components/img14.png" data-srcset="images/components/img14@2x.png 2x" alt="#"/>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="section page-container section-six">
+						<div class="section__bg">
+							<picture class="lozad js-lazy animate" data-iesrc="#" data-alt="#">
+								<source srcset="images/section-bg/bg2.jpg, images/section-bg/bg2@2x.jpg 2x" media="(min-width: 1366px)" type="image/png"/>
+								<source srcset="images/section-bg/bg6-tablet.jpg" media="(min-width: 768px) and (max-width: 1365px)" type="image/png"/>
+								<source srcset="images/section-bg/bg6-mobile.jpg" media="(max-width: 767px)" type="image/png"/>
+								<source srcset="#"/>
+							</picture>
+						</div>
+						<div class="section__content">
+							<div class="container">
+								<div class="view__menu">
+									<h2 class="animate"><span class="is-orange is-txt"><span style="transition-delay: 0s">V</span><span style="transition-delay: 0.04s">i</span><span style="transition-delay: 0.08s">e</span><span style="transition-delay: 0.12s">w</span><span style="transition-delay: 0.16s">&nbsp;</span><span style="transition-delay: 0.2s">O</span><span style="transition-delay: 0.24s">u</span><span style="transition-delay: 0.28s">r</span><span style="transition-delay: 0.32s">&nbsp;</span><span class="inline-block"><span style="transition-delay: 0.36s">M</span><span style="transition-delay: 0.4s">e</span><span style="transition-delay: 0.44s">n</span><span style="transition-delay: 0.48s">u</span></span></span>
+									</h2>
+									<div class="clear"></div>
+									<div class="view__menu-content">
+										<div class="view__menu-row">
+											<div class="view__menu-col animate view__menu-col-1"><a class="view__menu-block" href="#"><span class="view__menu-img">
+														<picture class="lozad js-lazy" data-iesrc="#" data-alt="#">
+															<source srcset="images/menu/starters.jpg, images/menu/starters@2x.jpg 2x" media="(min-width: 1366px)" type="image/png"/>
+															<source srcset="images/menu/starters-tablet.jpg, images/menu/starters-tablet@2x.jpg 2x" media="(min-width: 768px) and (max-width: 1365px)" type="image/png"/>
+															<source srcset="images/menu/starters-mobile.jpg, images/menu/starters-mobile@2x.jpg 2x" media="(max-width: 767px)" type="image/png"/>
+															<source srcset="#"/>
+														</picture></span><span class="view__menu-title">Starters</span></a></div>
+											<div class="view__menu-col animate view__menu-col-2"><a class="view__menu-block" href="#"><span class="view__menu-img">
+														<picture class="lozad js-lazy" data-iesrc="#" data-alt="#">
+															<source srcset="images/menu/shef-special.jpg, images/menu/shef-special@2x.jpg 2x" media="(min-width: 1366px)" type="image/png"/>
+															<source srcset="images/menu/shef-special-tablet.jpg, images/menu/shef-special-tablet@2x.jpg 2x" media="(min-width: 768px) and (max-width: 1365px)" type="image/png"/>
+															<source srcset="images/menu/shef-special-mobile.jpg, images/menu/shef-special-mobile@2x.jpg 2x" media="(max-width: 767px)" type="image/png"/>
+															<source srcset="#"/>
+														</picture></span><span class="view__menu-title">Shef special</span></a></div>
+											<div class="view__menu-col animate view__menu-col-3"><a class="view__menu-block" href="#"><span class="view__menu-img">
+														<picture class="lozad js-lazy" data-iesrc="#" data-alt="#">
+															<source srcset="images/menu/tapas.jpg, images/menu/tapas@2x.jpg 2x" media="(min-width: 1366px)" type="image/png"/>
+															<source srcset="images/menu/tapas-tablet.jpg, images/menu/tapas-tablet@2x.jpg 2x" media="(min-width: 768px) and (max-width: 1365px)" type="image/png"/>
+															<source srcset="images/menu/tapas-mobile.jpg, images/menu/tapas-mobile@2x.jpg 2x" media="(max-width: 767px)" type="image/png"/>
+															<source srcset="#"/>
+														</picture></span><span class="view__menu-title">Tapas</span></a></div>
+											<div class="view__menu-col animate view__menu-col-4"><a class="view__menu-block" href="#"><span class="view__menu-img">
+														<picture class="lozad js-lazy" data-iesrc="#" data-alt="#">
+															<source srcset="images/menu/dessert.jpg, images/menu/dessert@2x.jpg 2x" media="(min-width: 1366px)" type="image/png"/>
+															<source srcset="images/menu/dessert-tablet.jpg, images/menu/dessert-tablet@2x.jpg 2x" media="(min-width: 768px) and (max-width: 1365px)" type="image/png"/>
+															<source srcset="images/menu/dessert-mobile.jpg, images/menu/dessert-mobile@2x.jpg 2x" media="(max-width: 767px)" type="image/png"/>
+															<source srcset="#"/>
+														</picture></span><span class="view__menu-title">Dessert</span></a></div>
+											<div class="view__menu-col animate view__menu-col-5"><a class="view__menu-block" href="#"><span class="view__menu-img">
+														<picture class="lozad js-lazy" data-iesrc="#" data-alt="#">
+															<source srcset="images/menu/coctails.jpg, images/menu/coctails@2x.jpg 2x" media="(min-width: 1366px)" type="image/png"/>
+															<source srcset="images/menu/coctails-tablet.jpg, images/menu/coctails-tablet@2x.jpg 2x" media="(min-width: 768px) and (max-width: 1365px)" type="image/png"/>
+															<source srcset="images/menu/coctails-mobile.jpg, images/menu/coctails-mobile@2x.jpg 2x" media="(max-width: 767px)" type="image/png"/>
+															<source srcset="#"/>
+														</picture></span><span class="view__menu-title">Coctails</span></a></div>
+										</div>
+									</div>
+									<div class="view__menu-action animate"><a class="btn-orange" href="#"><span>Show all menu</span></a></div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="section page-container section-seven">
+						<div class="section__bg">
+							<picture class="lozad js-lazy animate" data-iesrc="#" data-alt="#">
+								<source srcset="images/section-bg/bg3.jpg, images/section-bg/bg3@2x.jpg 2x" media="(min-width: 1366px)" type="image/png"/>
+								<source srcset="images/section-bg/bg7-tablet.jpg" media="(min-width: 768px) and (max-width: 1365px)" type="image/png"/>
+								<source srcset="images/section-bg/bg7-mobile.jpg" media="(max-width: 767px)" type="image/png"/>
+								<source srcset="#"/>
+							</picture>
+						</div>
+						<div class="section__content">
+							<div class="container">
+								<div class="seven__content">
+									<div class="seven__block-row">
+										<div class="seven__col seven__block-left">
+											<div class="seven__block-content">
+												<h3 class="animate"><span style="transition-delay: 0s">H</span><span style="transition-delay: 0.04s">o</span><span style="transition-delay: 0.08s">w</span><span style="transition-delay: 0.12s">&nbsp;</span><span class="is-orange"><span style="transition-delay: 0.16s">t</span><span style="transition-delay: 0.2s">o</span><span style="transition-delay: 0.24s">&nbsp;</span><span style="transition-delay: 0.28s">f</span><span style="transition-delay: 0.32s">i</span><span style="transition-delay: 0.36s">n</span><span style="transition-delay: 0.4s">d</span></span>
+												</h3>
+												<div class="map__block animate" id="map"></div>
+												<div class="map__block-info animate">
+													<div class="map__block-info__title">Address</div>
+													<div class="map__block-info__txt">
+														<p>Jl. Monkey Forest No.67, Ubud, Kecamatan Ubud, Kabupaten Gianyar, Bali 80571</p>
+													</div>
+												</div>
+											</div>
+											<div class="map__block-action animate"><a class="btn-orange" href="#"><span><img class="image js-lazy" draggable="false" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAAD0lEQVR42mNkwAIYh7IgAAVVAAuInjI5AAAAAElFTkSuQmCC" data-src="images/icons/svg/icon-copy.svg" alt="#"/>Copy GPS coordinates</span></a></div>
+										</div>
+										<div class="seven__col seven__block-right">
+											<div class="seven__block-content">
+												<h3 class="animate"><span style="transition-delay: 0s">W</span><span style="transition-delay: 0.04s">h</span><span style="transition-delay: 0.08s">a</span><span style="transition-delay: 0.12s">t</span><span style="transition-delay: 0.16s">&nbsp;</span><span style="transition-delay: 0.2s">o</span><span style="transition-delay: 0.24s">u</span><span style="transition-delay: 0.28s">r</span><span style="transition-delay: 0.32s">&nbsp;</span><span class="is-orange"><span style="transition-delay: 0.36s">g</span><span style="transition-delay: 0.4s">u</span><span style="transition-delay: 0.44s">e</span><span style="transition-delay: 0.48s">s</span><span style="transition-delay: 0.52s">t</span><span style="transition-delay: 0.56s">s</span><span style="transition-delay: 0.6s">&nbsp;</span><span style="transition-delay: 0.64s">s</span><span style="transition-delay: 0.68s">a</span><span style="transition-delay: 0.72s">y</span></span>
+												</h3>
+												<ul class="review__list">
+													<li class="review__item animate">
+														<div class="review__block-left">
+															<div class="review__block-author"><img class="image js-lazy" draggable="false" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAAD0lEQVR42mNkwAIYh7IgAAVVAAuInjI5AAAAAElFTkSuQmCC" data-src="images/review/author1.jpg" data-srcset="images/review/author1@2x.jpg 2x" alt="#"/>
+															</div>
+															<div class="review__block-content">
+																<div class="review__block-author__name">Cristian Iobbi</div>
+																<div class="review__block-stars"><img class="image js-lazy" draggable="false" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAAD0lEQVR42mNkwAIYh7IgAAVVAAuInjI5AAAAAElFTkSuQmCC" data-src="images/icons/svg/icon-star-active.svg" alt="#"/><img class="image js-lazy" draggable="false" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAAD0lEQVR42mNkwAIYh7IgAAVVAAuInjI5AAAAAElFTkSuQmCC" data-src="images/icons/svg/icon-star-active.svg" alt="#"/><img class="image js-lazy" draggable="false" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAAD0lEQVR42mNkwAIYh7IgAAVVAAuInjI5AAAAAElFTkSuQmCC" data-src="images/icons/svg/icon-star-active.svg" alt="#"/><img class="image js-lazy" draggable="false" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAAD0lEQVR42mNkwAIYh7IgAAVVAAuInjI5AAAAAElFTkSuQmCC" data-src="images/icons/svg/icon-star-active.svg" alt="#"/><img class="image js-lazy" draggable="false" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAAD0lEQVR42mNkwAIYh7IgAAVVAAuInjI5AAAAAElFTkSuQmCC" data-src="images/icons/svg/icon-star-active.svg" alt="#"/>
+																</div>
+															</div>
+														</div>
+														<div class="review__block-right">
+															<p>Locale bellissimo, cucina mediterranea, servizio di qualità superiore alla media di Bali. I piatti sono ben fatti e molto buoni. In abbinamento abbiamo bevuto dei cocktail che erano...</p>
+														</div>
+													</li>
+													<li class="review__item animate">
+														<div class="review__block-left">
+															<div class="review__block-author"><img class="image js-lazy" draggable="false" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAAD0lEQVR42mNkwAIYh7IgAAVVAAuInjI5AAAAAElFTkSuQmCC" data-src="images/review/author2.jpg" data-srcset="images/review/author2@2x.jpg 2x" alt="#"/>
+															</div>
+															<div class="review__block-content">
+																<div class="review__block-author__name">Riyon K</div>
+																<div class="review__block-stars"><img class="image js-lazy" draggable="false" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAAD0lEQVR42mNkwAIYh7IgAAVVAAuInjI5AAAAAElFTkSuQmCC" data-src="images/icons/svg/icon-star-active.svg" alt="#"/><img class="image js-lazy" draggable="false" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAAD0lEQVR42mNkwAIYh7IgAAVVAAuInjI5AAAAAElFTkSuQmCC" data-src="images/icons/svg/icon-star-active.svg" alt="#"/><img class="image js-lazy" draggable="false" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAAD0lEQVR42mNkwAIYh7IgAAVVAAuInjI5AAAAAElFTkSuQmCC" data-src="images/icons/svg/icon-star-active.svg" alt="#"/><img class="image js-lazy" draggable="false" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAAD0lEQVR42mNkwAIYh7IgAAVVAAuInjI5AAAAAElFTkSuQmCC" data-src="images/icons/svg/icon-star-active.svg" alt="#"/><img class="image js-lazy" draggable="false" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAAD0lEQVR42mNkwAIYh7IgAAVVAAuInjI5AAAAAElFTkSuQmCC" data-src="images/icons/svg/icon-star-active.svg" alt="#"/>
+																</div>
+															</div>
+														</div>
+														<div class="review__block-right">
+															<p>HIGHLY recommend this new hot spot! They were so nice and accommodating to our large group. Five star service! Went with 12 of my friends for my birthday and it was the most fun!</p>
+														</div>
+													</li>
+													<li class="review__item animate">
+														<div class="review__block-left">
+															<div class="review__block-author"><img class="image js-lazy" draggable="false" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAAD0lEQVR42mNkwAIYh7IgAAVVAAuInjI5AAAAAElFTkSuQmCC" data-src="images/review/author3.jpg" data-srcset="images/review/author3@2x.jpg 2x" alt="#"/>
+															</div>
+															<div class="review__block-content">
+																<div class="review__block-author__name">Marina Volkova</div>
+																<div class="review__block-stars"><img class="image js-lazy" draggable="false" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAAD0lEQVR42mNkwAIYh7IgAAVVAAuInjI5AAAAAElFTkSuQmCC" data-src="images/icons/svg/icon-star-active.svg" alt="#"/><img class="image js-lazy" draggable="false" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAAD0lEQVR42mNkwAIYh7IgAAVVAAuInjI5AAAAAElFTkSuQmCC" data-src="images/icons/svg/icon-star-active.svg" alt="#"/><img class="image js-lazy" draggable="false" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAAD0lEQVR42mNkwAIYh7IgAAVVAAuInjI5AAAAAElFTkSuQmCC" data-src="images/icons/svg/icon-star-active.svg" alt="#"/><img class="image js-lazy" draggable="false" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAAD0lEQVR42mNkwAIYh7IgAAVVAAuInjI5AAAAAElFTkSuQmCC" data-src="images/icons/svg/icon-star-active.svg" alt="#"/><img class="image js-lazy" draggable="false" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAAD0lEQVR42mNkwAIYh7IgAAVVAAuInjI5AAAAAElFTkSuQmCC" data-src="images/icons/svg/icon-star-active.svg" alt="#"/>
+																</div>
+															</div>
+														</div>
+														<div class="review__block-right">
+															<p>Стильное и модное место, которые не так просто найти в Убуде ) Находиться в самом центре, подойдёт как для романтичного ужина, так и для тусовки c друзьями...</p>
+														</div>
+													</li>
+												</ul>
+											</div>
+											<div class="read__reviews animate"><a class="btn-orange" href="#"><span>Read all reviews</span></a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<footer class="footer animate">
+								<div class="container">
+									<div class="footer__container">
+										<div class="footer__content-top">
+											<div class="footer__logo"><img class="image js-lazy" draggable="false" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAAD0lEQVR42mNkwAIYh7IgAAVVAAuInjI5AAAAAElFTkSuQmCC" data-src="images/logo.svg" alt="#"/>
+											</div>
+											<div class="footer__nav">
+												<ul class="footer__nav-list">
+													<li><a href="#">Home</a></li>
+													<li><a href="#">About</a></li>
+													<li><a href="#">Gallery</a></li>
+													<li><a href="#">Gift cards</a></li>
+													<li><a href="#">Catering</a></li>
+													<li><a href="#">Order</a></li>
+													<li><a href="#">Contact</a></li>
+													<li><a href="#">Reserve a table</a></li>
+												</ul>
+											</div>
+											<ul class="footer__action">
+												<li><a class="footer-btn" href="#">Order</a></li>
+												<li><a class="footer-btn footer-btn__reservation is-active" href="#">Reservations</a></li>
+											</ul>
+										</div>
+										<div class="footer__content-bottom">
+											<div class="footer__copy footer-text">&copy; Copyright Donna 2023. All rights reserved.</div>
+											<div class="footer__time footer-text">Sunday - Thursday: 11:30AM - 11PM | Friday and Saturday: 11:30AM - 12AM</div>
+											<div class="footer__soial">
+												<div class="footer__soial-title footer-text">Social</div>
+												<ul class="footer__soial-review__list">
+													<li><a class="footer__soial-link__inst" href="#"><svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.5002 7.12183C9.08593 7.12183 7.12177 9.0859 7.12177 11.5001C7.12177 13.9143 9.08593 15.8784 11.5002 15.8784C13.9144 15.8784 15.8786 13.9143 15.8786 11.5001C15.8786 9.0859 13.9144 7.12183 11.5002 7.12183Z" fill="white"/><path d="M16.9131 0H6.08691C2.73058 0 0 2.73058 0 6.08691V16.9131C0 20.2694 2.73058 23 6.08691 23H16.9131C20.2694 23 23 20.2694 23 16.9131V6.08691C23 2.73058 20.2694 0 16.9131 0ZM11.5002 17.2259C8.34285 17.2259 5.77412 14.6573 5.77412 11.5C5.77412 8.34271 8.34285 5.77408 11.5002 5.77408C14.6575 5.77408 17.2262 8.34271 17.2262 11.5C17.2262 14.6573 14.6575 17.2259 11.5002 17.2259ZM18.3825 5.5709C18.2571 5.69623 18.0833 5.76815 17.9059 5.76815C17.7289 5.76815 17.555 5.69623 17.4292 5.5709C17.3039 5.44512 17.2325 5.27127 17.2325 5.09432C17.2325 4.91688 17.3039 4.74344 17.4292 4.6177C17.5551 4.49237 17.7284 4.42049 17.9059 4.42049C18.0833 4.42049 18.2571 4.49237 18.3825 4.6177C18.5078 4.74348 18.5797 4.91688 18.5797 5.09432C18.5797 5.27172 18.5078 5.44512 18.3825 5.5709Z" fill="white"/></svg></a></li>
+													<li><a class="footer__soial-link__tg" href="#"><svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.117 8.14804L10.2847 12.9153L10.0102 13.1401C9.94994 13.1879 9.91059 13.2572 9.90046 13.3335L9.83904 13.8405L9.67046 15.265C9.67202 15.2823 9.66663 15.2995 9.65548 15.3129C9.64433 15.3263 9.62833 15.3346 9.611 15.3362C9.59367 15.3378 9.57643 15.3324 9.56307 15.3212C9.54972 15.3101 9.54134 15.2941 9.53978 15.2767L9.0654 13.8523L8.57534 12.3952C8.55444 12.3299 8.55711 12.2593 8.5829 12.1958C8.6087 12.1323 8.65597 12.0798 8.71648 12.0476L14.7853 8.56883L15.9275 7.91542C16.0935 7.81872 16.2634 8.02781 16.117 8.14804Z" fill="white" /><path d="M19.8636 0H3.13636C2.30455 0 1.5068 0.330437 0.91862 0.91862C0.330437 1.5068 0 2.30455 0 3.13636L0 19.8636C0 20.6955 0.330437 21.4932 0.91862 22.0814C1.5068 22.6696 2.30455 23 3.13636 23H19.8636C20.6955 23 21.4932 22.6696 22.0814 22.0814C22.6696 21.4932 23 20.6955 23 19.8636V3.13636C23 2.30455 22.6696 1.5068 22.0814 0.91862C21.4932 0.330437 20.6955 0 19.8636 0V0ZM18.6731 6.65693L16.428 16.577C16.3222 17.0422 15.7315 17.2526 15.3172 16.969L11.9273 14.669L10.201 16.3012C10.1306 16.3673 10.0452 16.4152 9.9521 16.4407C9.85901 16.4663 9.7611 16.4687 9.66685 16.4479C9.5726 16.427 9.48487 16.3835 9.41125 16.321C9.33764 16.2586 9.28038 16.1791 9.24443 16.0895L8.62108 14.26L7.99773 12.4305L4.65619 11.5157C4.56276 11.4953 4.47869 11.4446 4.41705 11.3715C4.3554 11.2984 4.31964 11.2069 4.31531 11.1114C4.31099 11.0159 4.33835 10.9216 4.39315 10.8432C4.44794 10.7648 4.52709 10.7068 4.6183 10.678L17.527 6.02705L17.7649 5.9421C18.2654 5.76699 18.7829 6.1721 18.6731 6.65693Z" fill="white" /></svg></a></li>
+													<li><a class="footer__soial-link__fb" href="#"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.7773 0H3.22266C1.44583 0 0 1.44583 0 3.22266V18.7773C0 20.5542 1.44583 22 3.22266 22H9.71094V14.2227H7.13281V10.3555H9.71094V7.73438C9.71094 5.60188 11.4456 3.86719 13.5781 3.86719H17.4883V7.73438H13.5781V10.3555H17.4883L16.8438 14.2227H13.5781V22H18.7773C20.5542 22 22 20.5542 22 18.7773V3.22266C22 1.44583 20.5542 0 18.7773 0Z" fill="white" /></svg></a></li>
+													<li><a class="footer__soial-link__wp" href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.1856 13.8936C16.0214 13.7294 15.8015 13.6389 15.5662 13.6389C15.331 13.6389 15.111 13.7293 14.9469 13.8936L14.6209 14.2195C14.2749 14.5655 13.8138 14.756 13.3224 14.756C12.8309 14.756 12.3696 14.5654 12.0236 14.2193L9.77957 11.9754C9.43363 11.6295 9.24303 11.1683 9.24299 10.6768C9.24294 10.1854 9.43344 9.72411 9.77943 9.37813L10.1055 9.05216C10.447 8.71068 10.447 8.15488 10.1054 7.81335L9.45346 7.16122C9.28935 6.99716 9.06932 6.90674 8.83396 6.90674C8.59869 6.90674 8.37875 6.99716 8.21455 7.16132L7.72841 7.64755C7.04366 8.3323 6.80708 9.41207 7.06222 10.6878C7.33803 12.0669 8.14377 13.4803 9.33111 14.6678C10.814 16.1506 12.6596 17.036 14.2679 17.0361H14.2682C15.1304 17.0361 15.8507 16.7714 16.3514 16.2707L16.8376 15.7845C17.1792 15.443 17.1792 14.8871 16.8376 14.5455L16.1856 13.8936Z" fill="white" /><path d="M20.4852 3.51469C18.2187 1.24823 15.2052 0 11.9999 0C11.9997 0 12 0 11.9998 0C8.79478 0 5.78109 1.24833 3.51469 3.51464C1.24823 5.78119 0 8.79464 0 12C9.375e-05 14.0404 0.519375 16.0459 1.50431 17.8196L0.0259688 23.1075C-0.042375 23.352 0.0264375 23.6145 0.205969 23.794C0.3855 23.9736 0.647813 24.0423 0.8925 23.974L6.18052 22.4956C7.95408 23.4807 9.95944 24 12 24C15.2053 24 18.2188 22.7518 20.4853 20.4854C22.7518 18.2188 24 15.2053 24 12C23.9999 8.79459 22.7516 5.78114 20.4852 3.51469ZM17.832 16.7788L17.3458 17.265C16.5757 18.0352 15.5114 18.4422 14.2682 18.4422C14.2681 18.4422 14.268 18.4422 14.2679 18.4422C12.2948 18.4421 10.0776 17.4028 8.33677 15.6621C6.95527 14.2804 6.01298 12.6118 5.68331 10.9635C5.33302 9.21178 5.70614 7.68103 6.73406 6.65311L7.22025 6.16683C7.65009 5.73703 8.22319 5.50036 8.83402 5.50036C9.44484 5.50036 10.0179 5.73698 10.4478 6.16664L11.0999 6.81891C11.9897 7.70869 11.9897 9.15656 11.0999 10.0464L10.7738 10.3725C10.6935 10.4528 10.6493 10.5608 10.6493 10.6765C10.6493 10.7924 10.6936 10.9005 10.774 10.9808L13.018 13.2248C13.0986 13.3053 13.2066 13.3496 13.3224 13.3496C13.4382 13.3496 13.5462 13.3054 13.6266 13.225L13.9526 12.8991C14.3823 12.4693 14.9554 12.2325 15.5662 12.2325C16.1771 12.2325 16.7503 12.4693 17.1801 12.8991L17.8321 13.5511C18.7219 14.441 18.7219 15.889 17.832 16.7788Z" fill="white" /></svg></a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</footer>
+						</div>
+					</section>
+				</div>
+			</div>
+		</main>
+		<div class="menu__container">
+			<div class="menu__bg">
+				<picture class="lozad js-lazy" data-iesrc="#" data-alt="#">
+					<source srcset="images/bg-menu-tablet.jpg" media="(max-width: 1365px)" type="image/png"/>
+					<source srcset="images/bg-menu-pc.jpg" media="(min-width: 1366px)" type="image/png"/>
+					<source srcset="#"/>
+				</picture>
+			</div>
+			<div class="nav__content">
+				<div class="nav__content-container">
+					<div class="nav__content-header">
+						<form class="nav__search-form" action="" method="post">
+							<button class="nav__search-btn" type="submit"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.8567 20.9736L18.5326 16.6494C19.8431 14.9338 20.5618 12.8529 20.5621 10.6571C20.5621 8.01099 19.5315 5.52303 17.6601 3.65194C15.789 1.78084 13.3014 0.750244 10.6549 0.750244C8.00871 0.750244 5.52075 1.78084 3.64966 3.65194C-0.212972 7.51489 -0.212972 13.8 3.64966 17.6624C5.52075 19.5338 8.00871 20.5644 10.6549 20.5644C12.8507 20.5641 14.9316 19.8453 16.6471 18.5348L20.9713 22.859C21.2314 23.1194 21.5728 23.2496 21.914 23.2496C22.2551 23.2496 22.5966 23.1194 22.8567 22.859C23.3775 22.3385 23.3775 21.4941 22.8567 20.9736ZM5.53508 15.7769C2.71216 12.954 2.71248 8.3606 5.53508 5.53735C6.90259 4.17017 8.72095 3.41691 10.6549 3.41691C12.5891 3.41691 14.4071 4.17017 15.7747 5.53735C17.1422 6.90487 17.8954 8.72323 17.8954 10.6571C17.8954 12.5914 17.1422 14.4094 15.7747 15.7769C14.4071 17.1445 12.5891 17.8977 10.6549 17.8977C8.72095 17.8977 6.90259 17.1445 5.53508 15.7769Z"/></svg></button>
+							<div class="nav__search-control">
+								<input type="search" placeholder="Search">
+							</div>
+						</form>
+					</div>
+					<div class="nav__content-body">
+						<div class="nav__content-scroll">
+							<ul class="nav__list">
+								<li class="nav__list-item"><a href="#"><span class="nav__link-anime-1">Home</span></a></li>
+								<li class="nav__list-item"><a href="#"><span class="nav__link-anime-2">About</span></a></li>
+								<li class="nav__list-item"><a href="#"><span class="nav__link-anime-3">Catering</span></a></li>
+								<li class="nav__list-item"><a class="is-active" href="#"><span class="nav__link-anime-4">Gallery</span></a></li>
+								<li class="nav__list-item"><a href="#"><span class="nav__link-anime-5">Gift cards</span></a></li>
+								<li class="nav__list-item"><a href="#"><span class="nav__link-anime-6">Location</span></a></li>
+							</ul>
+						</div>
+						<ul class="nav__social-list">
+							<li class="nav__social-item__inst"><a href="#"><img class="image js-lazy" draggable="false" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAAD0lEQVR42mNkwAIYh7IgAAVVAAuInjI5AAAAAElFTkSuQmCC" data-src="images/icons/svg/icon-instagram-xs.svg" alt="#"/></a></li>
+							<li class="nav__social-item__fb"><a href="#"><img class="image js-lazy" draggable="false" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAAD0lEQVR42mNkwAIYh7IgAAVVAAuInjI5AAAAAElFTkSuQmCC" data-src="images/icons/svg/icon-facebook-xs.svg" alt="#"/></a></li>
+						</ul>
+					</div>
+					<div class="nav__content-footer">
+						<ul class="nav__btn-list">
+							<li class="nav__btn-item__whatsapp"><a href="#"><span class="nav__btn-icon"><img class="image js-lazy" draggable="false" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAAD0lEQVR42mNkwAIYh7IgAAVVAAuInjI5AAAAAElFTkSuQmCC" data-src="images/icons/svg/icon-whatsapp-xs.svg" alt="#"/></span><span>Book by WhatsApp</span></a></li>
+							<li class="nav__btn-item__phone"><a href="tel:+6281277189610"><span>+ 62 812 7718 9610</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/vendor.js?v=1677229612390"></script>
+		<script src="js/main.js?v=1677229612390"></script>
+		<script src="js/common.js?v=1677229612390"></script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcFoIRQF38N8c4CTPd-EqGs6zvPxVDgS8&amp;callback=initMap"></script>
+		<script src="js/map.js?v=1677229612390"></script>
+	</body>
+</html>
